@@ -101,10 +101,12 @@ Node* LinkedList::remove(int pos)
         return temp ; 
         free(temp);
     }
-
+    else if (pos > count()){
+        return NULL;
+    }
     else {
         cout << "In position " << pos << " doesn't has member" << endl;
-        return 0;
+        return NULL;
     }
     
 }

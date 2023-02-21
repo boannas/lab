@@ -11,13 +11,14 @@ int main() {
     Node a,b,c; 
     b.setValue(10);
     c.setValue(20);
-    // A.printList();
+    A.printList();
     A.stackPush(&a);
-    // A.printList();
+    A.printList();
     A.stackPush(&b);
-    // A.printList();
+    A.printList();
     A.stackPush(&c);
     A.printList();
+    A.stackPop();
     A.stackPop();
     A.printList();
     A.stackPeek();
