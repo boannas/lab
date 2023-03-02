@@ -207,7 +207,7 @@ void LinkedList::printList()
     cout << endl;
 }
 
-Node* LinkedList::reTail(){
+Node* LinkedList::lastNode(){
     Node* temp = head , *prev = NULL;
     // Check for empty list.
     if (head == NULL) {

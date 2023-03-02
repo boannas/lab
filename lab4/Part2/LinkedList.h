@@ -18,7 +18,7 @@ class LinkedList
         void reverse();
         int findLoop();
         void printList();
-        Node* reTail();
+        Node* lastNode();
         Node* frontNode();
 
 };

@@ -19,7 +19,7 @@ Medthod in Stack :
 
     -Pop : pop at top 
 
-    -Peek : what is the first node
+    -Peek : what is the Last node
 ```
 
 ---

@@ -17,7 +17,6 @@ void Queue::enqueue(Node *newNode){         //Add node at the end
 int Queue::dequeue(){                       //remove node firstNode
     Node *temp = LinkedList::frontNode();
     if (LinkedList::count() != 0){
-        
         LinkedList::remove(0);
         cout << "DEQUEUE node value : " << temp->getValue() << endl;
     }

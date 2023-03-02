@@ -8,18 +8,18 @@ int main() {
     //**********************************************Stack*****************************************************
     cout << "----------------------------------------------"<< endl;
     Stack A;
-    Node a,b,c; 
+    Node a,b,c,d; 
     b.setValue(10);
     c.setValue(20);
-    A.printList();
+    d.setValue(30);
     A.stackPush(&a);
-    A.printList();
     A.stackPush(&b);
-    A.printList();
     A.stackPush(&c);
     A.printList();
+    A.stackPeek();
     A.stackPop();
     A.stackPop();
+    A.stackPush(&d);
     A.printList();
     A.stackPeek();
     cout << "----------------------------------------------";
@@ -36,6 +36,7 @@ int main() {
     B.enqueue(&bb);
     B.enqueue(&cc);
     B.printList();
+    B.queuePeek();
     B.dequeue();
     B.printList();
     B.queuePeek();

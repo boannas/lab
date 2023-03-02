@@ -5,7 +5,7 @@
 using namespace std;
 
 Stack::Stack(){                                                 //Stack as Linkedlist
-    LinkedList();
+
 }
 
 Stack::~Stack(){}
@@ -16,7 +16,7 @@ void Stack::stackPush(Node *newNode){                           //Add node at th
 }
 
 int Stack::stackPop(){                                          //remove node at the end
-    Node *temp = LinkedList::reTail();
+    Node *temp = LinkedList::lastNode();
     if (LinkedList::count() != 0){
         LinkedList::remove(-1);
         cout <<"POP node value : " << temp->getValue() << endl ;
@@ -30,7 +30,7 @@ int Stack::stackPop(){                                          //remove node at
 }
 
 int Stack::stackPeek(){                                         //return the last Node
-    Node *temp = LinkedList::reTail();
+    Node *temp = LinkedList::lastNode();
     // cout << temp << endl;
     if (temp != 0){
         // cout << "55";
