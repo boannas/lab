@@ -207,7 +207,7 @@ void LinkedList::printList()
     cout << endl;
 }
 
-Node* LinkedList::lastNode(){
+Node* LinkedList::get_lNode(){
     Node* temp = head , *prev = NULL;
     // Check for empty list.
     if (head == NULL) {
@@ -226,6 +226,6 @@ Node* LinkedList::lastNode(){
     return prev;
 }
 
-Node* LinkedList::frontNode(){
+Node* LinkedList::get_fNode(){
     return head;
 }

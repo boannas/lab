@@ -7,39 +7,34 @@ using namespace std;
 int main() {
     //**********************************************Stack*****************************************************
     cout << "----------------------------------------------"<< endl;
-    Stack A;
-    Node a,b,c,d; 
-    b.setValue(10);
-    c.setValue(20);
-    d.setValue(30);
-    A.stackPush(&a);
-    A.stackPush(&b);
-    A.stackPush(&c);
-    A.printList();
-    A.stackPeek();
-    A.stackPop();
-    A.stackPop();
-    A.stackPush(&d);
-    A.printList();
-    A.stackPeek();
+    Stack stack_B;
+    Node node_a,node_b(10,NULL),node_c(20,NULL),node_d(30,NULL); 
+    stack_B.stackPush(&node_a);
+    stack_B.stackPush(&node_b);
+    stack_B.stackPush(&node_c);
+    stack_B.printList();
+    stack_B.stackPop();
+    // stack_B.stackPop();
+    stack_B.stackPop();
+    stack_B.stackPush(&node_d);
+    stack_B.printList();
+    stack_B.stackPeek();
     cout << "----------------------------------------------";
     cout << endl;
 
 
     //**************************************************Queue**********************************************************
     cout << "----------------------------------------------"<<endl;
-    Queue B;
-    Node aa,bb,cc;
-    bb.setValue(100);
-    cc.setValue(200);
-    B.enqueue(&aa);
-    B.enqueue(&bb);
-    B.enqueue(&cc);
-    B.printList();
-    B.queuePeek();
-    B.dequeue();
-    B.printList();
-    B.queuePeek();
+    Queue queue_B;
+    Node node_q1,node_q2(100,NULL),node_q3(200,NULL);
+    queue_B.enqueue(&node_q1);
+    queue_B.enqueue(&node_q2);
+    queue_B.enqueue(&node_q3);
+    queue_B.printList();
+    queue_B.queuePeek();
+    queue_B.dequeue();
+    queue_B.printList();
+    queue_B.queuePeek();
     cout << "----------------------------------------------"<<endl;
 
 }

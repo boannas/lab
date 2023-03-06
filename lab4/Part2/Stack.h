@@ -9,7 +9,7 @@
             ~Stack();
             void stackPush(Node *newNode);
             int stackPop();
-            int stackPeek();
+            Node * stackPeek();
 
 
     };

@@ -18,8 +18,8 @@ class LinkedList
         void reverse();
         int findLoop();
         void printList();
-        Node* lastNode();
-        Node* frontNode();
+        Node* get_lNode();
+        Node* get_fNode();
 
 };
 #endif

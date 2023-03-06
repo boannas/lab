@@ -5,37 +5,35 @@
 using namespace std;
 
 Stack::Stack(){                                                 //Stack as Linkedlist
-
 }
 
 Stack::~Stack(){}
 
 void Stack::stackPush(Node *newNode){                           //Add node at the end
-    cout << "Node value : " << newNode->getValue() << " has push to the end" << endl;
-    LinkedList::insert(newNode,-1);
+    // cout << "Node value : " << newNode->getValue() << " has push to the end" << endl;
+    LinkedList::insert(newNode,0);
 }
 
 int Stack::stackPop(){                                          //remove node at the end
-    Node *temp = LinkedList::lastNode();
+    Node *temp = LinkedList::get_fNode();
     if (LinkedList::count() != 0){
-        LinkedList::remove(-1);
-        cout <<"POP node value : " << temp->getValue() << endl ;
+        LinkedList::remove(0);
+        // cout <<"POP node value : " << temp->getValue() << endl ;
     }
     
     else if(LinkedList::count() == 0) {
-        cout << "Out of range "<<  endl;
+        // cout << "Out of range "<<  endl;
         return 0;
     }
     return temp->getValue();
 }
 
-int Stack::stackPeek(){                                         //return the last Node
-    Node *temp = LinkedList::lastNode();
+Node * Stack::stackPeek(){                                         //return the last Node
+    Node *temp = LinkedList::get_fNode();
     // cout << temp << endl;
-    if (temp != 0){
-        // cout << "55";
-        cout << "PEEK_stack node value : " << temp->getValue() << endl;
-        return temp->getValue();
+    if (LinkedList::count() != 0){
+        // cout << "PEEK_stack node value : " << temp->getValue() << endl;
+        return temp;
     }
     else {
         cout << "Not has member " << endl ;

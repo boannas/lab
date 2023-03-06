@@ -1,0 +1,1 @@
+g++ Node.cpp LinkedList.cpp Queue.cpp postQueue.cpp -oqueue

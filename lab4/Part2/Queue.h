@@ -8,6 +8,6 @@ class Queue : public LinkedList{
         ~Queue() ;
         void enqueue(Node *newNode);
         int dequeue();
-        int queuePeek();
+        Node* queuePeek();
 };
 #endif
