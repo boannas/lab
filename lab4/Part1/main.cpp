@@ -7,11 +7,11 @@ int main() {
     A.showPersonInfo();
     cout << endl;
 
-    Student B("F2",19,180,20,10);
+    Student B("Boss",19,170,76,10);
     B.showStudenInfo();
     cout <<endl;
     
-    Teacher C("AJ",34,168);
-    C.setSubject("Programming");
+    Teacher C("Aj.Pengwang",45,168);
+    C.setSubject("Basic Mechanics");
     C.showTeacherInfo();
 }
